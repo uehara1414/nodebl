@@ -25,3 +25,5 @@ function getBusLocationInformation(_in, _out, callback)
         }
     );
 }
+
+module.exports.getBusLocationInformation = getBusLocationInformation;
