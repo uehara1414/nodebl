@@ -1,4 +1,3 @@
-// Count all of the links from the io.js build page
 var jsdom = require("jsdom");
 
 function getBusLocationInformation(_in, _out, callback)
