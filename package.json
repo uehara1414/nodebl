@@ -1,0 +1,22 @@
+{
+  "name": "nodebl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uehara1414/nodebl.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uehara1414/nodebl/issues"
+  },
+  "homepage": "https://github.com/uehara1414/nodebl#readme",
+  "dependencies": {
+    "jsdom": "^9.8.3"
+  }
+}
