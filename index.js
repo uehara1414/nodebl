@@ -34,6 +34,12 @@ function getBusLocationInformation(_in, _out, callback)
         "http://www.hakobus.jp/result.php?in=" + _in + "&out=" + _out,
         ["http://code.jquery.com/jquery.js"],
         function (err, window) {
+
+            if (err) {
+                callback(err);
+                return;
+            }
+
             var trs = window.$("tr");
             for (var i = 4; i < trs.length; i++) {
                 var row = {};
