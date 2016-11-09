@@ -1,4 +1,5 @@
 var jsdom = require("jsdom");
+var stations_dict = require("./station-dict.json");
 
 function getBusLocationInformation(_in, _out, callback)
 {
@@ -25,4 +26,15 @@ function getBusLocationInformation(_in, _out, callback)
     );
 }
 
+stations_data = [];
+
+for (var key in stations_dict)
+{
+    if (stations_dict.hasOwnProperty(key)){
+        var info = {id: key, name: stations_dict[key]};
+        stations_data.push(info);
+    }
+}
+
 module.exports.getBusLocationInformation = getBusLocationInformation;
+module.exports.stations_data = stations_data;
